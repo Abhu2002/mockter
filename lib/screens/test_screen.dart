@@ -3,8 +3,9 @@ import 'package:expt1_login/models/question.dart';
 import 'package:expt1_login/screens/home_screen.dart';
 import 'package:expt1_login/screens/result_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:expt1_login/components/question_card.dart';
+import 'package:carousel_slider/carousel_slider.dart'
+    hide CarouselController;
 import 'package:provider/provider.dart';
 import 'package:flutter_awesome_alert_box/flutter_awesome_alert_box.dart';
 import 'package:custom_timer/custom_timer.dart';

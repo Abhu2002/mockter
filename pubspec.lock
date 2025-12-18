@@ -37,10 +37,10 @@ packages:
     dependency: "direct main"
     description:
       name: carousel_slider
-      sha256: "9c695cc963bf1d04a47bd6021f68befce8970bcd61d24938e1fb0918cf5d9c42"
+      sha256: bcc61735345c9ab5cb81073896579e735f81e35fd588907a393143ea986be8ff
       url: "https://pub.dev"
     source: hosted
-    version: "4.2.1"
+    version: "5.1.1"
   characters:
     dependency: transitive
     description:
@@ -262,6 +262,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  flutter_easyloading:
+    dependency: "direct main"
+    description:
+      name: flutter_easyloading
+      sha256: ba21a3c883544e582f9cc455a4a0907556714e1e9cf0eababfcb600da191d17c
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.5"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -288,22 +296,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  gallery_saver:
-    dependency: "direct main"
-    description:
-      name: gallery_saver
-      sha256: df8b7e207ca12d64c71e0710a7ee3bc48aa7206d51cc720716fedb1543a66712
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.3.2"
   google_fonts:
     dependency: "direct main"
     description:
       name: google_fonts
-      sha256: e70521755a6b08c6bde14ddae27dff5bf21010033888fc61da6c595f8a9f58c1
+      sha256: "6b6f10f0ce3c42f6552d1c70d2c28d764cf22bb487f50f66cca31dcd5194f4d6"
       url: "https://pub.dev"
     source: hosted
-    version: "2.3.3"
+    version: "4.0.4"
   google_sign_in:
     dependency: "direct main"
     description:
@@ -360,14 +360,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.1.2"
-  image_gallery_saver:
-    dependency: "direct main"
-    description:
-      name: image_gallery_saver
-      sha256: be812580c7a320d3bf583af89cac6b376f170d48000aca75215a73285a3223a0
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.7.1"
   image_save:
     dependency: "direct main"
     description:
@@ -448,14 +440,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.17.0"
-  modal_progress_hud_nsn:
-    dependency: "direct main"
-    description:
-      name: modal_progress_hud_nsn
-      sha256: f15a1cf2469b4d7b51525ca976aba804f1e697d918c36c9e07013c8583e89901
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.1.0-nullsafety-1"
   nested:
     dependency: transitive
     description:
@@ -576,6 +560,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.0.1"
+  photo_manager:
+    dependency: "direct main"
+    description:
+      name: photo_manager
+      sha256: "807688e3221e90fb02a4466746edd9cb9a0de025f8754c819f96604c00f6f1f5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.8.3"
   platform:
     dependency: transitive
     description:

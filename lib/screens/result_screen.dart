@@ -5,16 +5,12 @@ import 'package:provider/provider.dart';
 import 'package:expt1_login/brains/test_summary.dart';
 import 'dart:typed_data';
 import 'dart:ui' as ui;
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/rendering.dart';
 import 'package:share_files_and_screenshot_widgets/share_files_and_screenshot_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:flutter_awesome_alert_box/flutter_awesome_alert_box.dart';
-
+import '../components/photo_manager.dart';
 import '../models/authentication_details.dart';
-import 'home_screen.dart';
 import 'login_screen.dart';
 
 GlobalKey previewContainer = GlobalKey();
@@ -23,7 +19,7 @@ class ResultScreen extends StatefulWidget {
   static String id = '/ResultScreen';
   String fileName;
 
-  ResultScreen({this.fileName = ''});
+  ResultScreen({super.key, this.fileName = ''});
   @override
   _ResultScreenState createState() => _ResultScreenState();
 }
@@ -46,7 +42,7 @@ class _ResultScreenState extends State<ResultScreen> {
                 key: previewContainer,
                 child: Container(
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
@@ -69,8 +65,8 @@ class _ResultScreenState extends State<ResultScreen> {
                           radius: 150.0,
                           child: Image.asset('images/trophy.png'),
                         ),
-                        SizedBox(height: 20.0),
-                        Text(
+                        const SizedBox(height: 20.0),
+                        const Text(
                           'Your test\'s results are here:',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -278,18 +274,8 @@ class _ResultScreenState extends State<ResultScreen> {
                                   ui.Image image = await boundary.toImage();
                                   ByteData? byteData = await image.toByteData(
                                       format: ui.ImageByteFormat.png);
-                                  final result =
-                                      await ImageGallerySaver.saveImage(
-                                          byteData!.buffer.asUint8List());
-                                  if (result['isSuccess']) {
-                                    SuccessAlertBox(
-                                      context: context,
-                                      title: 'PHOTO SAVED SUCCESSFULLY',
-                                      messageText:
-                                          'Your result is saved successfully at ${result['filePath']}',
-                                      buttonColor: Color(0xFF791eff),
-                                    );
-                                  }
+                                  await saveImageWithPhotoManager(context, byteData!);
+
                                 }
                               },
                             ),

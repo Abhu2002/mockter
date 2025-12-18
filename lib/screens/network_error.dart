@@ -12,11 +12,11 @@ class NetworkError extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset('images/network_error.jpg'),
-          SizedBox(height: 40.0),
+          const SizedBox(height: 40.0),
           Container(
             color: Colors.blueAccent,
             child: TextButton(
-              child: Text(
+              child: const Text(
                 'TRY AGAIN',
                 style: TextStyle(
                   color: Colors.white,
@@ -27,7 +27,7 @@ class NetworkError extends StatelessWidget {
               onPressed: () async {
                 List<ConnectivityResult> cr =
                     await Connectivity().checkConnectivity();
-                if (cr == ConnectivityResult.none) {
+                if (cr.contains(ConnectivityResult.none)) {
                 } else {
                   Navigator.pushNamed(context, LoginScreen.id, arguments: true);
                 }
