@@ -1,0 +1,16 @@
+question,optionA,optionB,optionC,optionD,correctAnswer,correctAnswers,imagePresent,questionImage,qt,que_marks,solutionImage,year
+"In a circular linked list organization,insertion of a record involves modification of :",One Pointer,Two Pointer,Multiple Pointer,No Pointer,Two Pointer,FALSE,FALSE,FALSE,SINGLE_CORRECT_ANSWER,2,FALSE,1987
+Linked List are not suitable data structure of which one of the following problems?,Insertion sort,Binary search,Radix sort,Polynominal manipulation,Binary search,FALSE,FALSE,FALSE,SINGLE_CORRECT_ANSWER,2,FALSE,1994
+"Consider the following function defined below
+
+struct item { 
+      int data; 
+      struct item * next; 
+}; 
+
+int f(struct item *p) { 
+      return ((p == NULL) || (p ->next == NULL) || 
+        ((p->data <= p -> next -> data) && 
+        f(p-> next))); 
+}
+For a given linked list p, the function f returns 1 if and only if",The list is empty or exactly has one element,The element in the list is sorted in non-decreasing order of data value,The element in the list are sorted in non-increasing order of data value,Not all element in the list have the same data value,The element in the list is sorted in non-decreasing order of data value,FALSE,FALSE,FALSE,SINGLE_CORRECT_ANSWER,2,FALSE,2003
