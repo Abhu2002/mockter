@@ -13,7 +13,7 @@ import 'package:expt1_login/screens/practice_options_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+ // await Firebase.initializeApp();
   runApp(MyApp());
 }
 

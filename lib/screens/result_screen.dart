@@ -6,7 +6,6 @@ import 'package:expt1_login/brains/test_summary.dart';
 import 'dart:typed_data';
 import 'dart:ui' as ui;
 import 'package:flutter/rendering.dart';
-import 'package:share_files_and_screenshot_widgets/share_files_and_screenshot_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import '../components/photo_manager.dart';
@@ -225,14 +224,14 @@ class _ResultScreenState extends State<ResultScreen> {
                               ),
                               onTap: () {
                                 print('Tapped');
-                                ShareFilesAndScreenshotWidgets().shareScreenshot(
+/*                                ShareFilesAndScreenshotWidgets().shareScreenshot(
                                     previewContainer,
                                     800,
                                     "Title",
                                     "result.png",
                                     "image/png",
                                     text:
-                                        "Hey,check out my result of the mock test I took on Mockter !!!!");
+                                        "Hey,check out my result of the mock test I took on Mockter !!!!");*/
                               },
                             ),
                           ],

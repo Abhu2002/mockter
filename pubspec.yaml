@@ -48,10 +48,10 @@ dependencies:
   google_fonts: ^4.0.4
   provider: ^6.0.2
   custom_timer: ^0.1.1
-  share_files_and_screenshot_widgets: ^1.0.6
+
   path_provider: ^2.0.9
   image_save: ^5.0.0
-  permission_handler: ^9.2.0
+  permission_handler: ^12.0.1
   url_launcher: ^6.0.20
   csv: ^5.0.1
   enum_to_string: ^2.0.1
