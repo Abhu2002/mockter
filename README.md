@@ -4,7 +4,7 @@ Mockter is a mobile application designed to help engineering students prepare fo
 
 ## 🚀 Features
 
-# Subject-wise Practice:
+## Subject-wise Practice:
 Practice questions from core Computer Engineering subjects:
 
 Data Structures
