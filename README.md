@@ -2,7 +2,7 @@
 
 Mockter is a mobile application designed to help engineering students prepare for the GATE (Graduate Aptitude Test in Engineering) through structured practice tests and realistic mock exams. The app focuses on improving exam readiness by simulating real GATE exam conditions and providing meaningful performance insights.
 
-# 🚀 Features
+** 🚀 Features**
 
 # Subject-wise Practice:
 Practice questions from core Computer Engineering subjects:
@@ -19,7 +19,7 @@ Programming Languages
 
 Computer Networks
 
-# Mock Test Mode:
+** Mock Test Mode:**
 Timed mock exams with:
 
 GATE-like exam interface
